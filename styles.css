@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Overpass;
+  background-color: hsl(216, 12%, 8%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.thank-you-state {
+  display: none;
+}
+
+.container {
+  background: radial-gradient(98.96% 98.96% at 50% 0%, hsl(215, 20%, 17%) 0%, hsl(216, 24%, 12%) 100%);
+  height: 380px;
+  width: 87%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: hsla(216, 12%, 54%, 0.1);
+}
+
+.icon-star {
+  width: 100%;
+  height: 100%;
+}
+
+.message h2 {
+  color: white;
+}
+
+.message p {
+  font-size: 0.9375rem;
+  color: hsl(216, 12%, 54%);
+}
+
+.attribution { font-size: 11px; text-align: center; position:absolute; bottom: 10px;}
+.attribution a { color: hsl(228, 45%, 44%); }
