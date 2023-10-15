@@ -17,7 +17,7 @@
   <main>
 
     <!-- Rating state start -->
-    <section class="rate-container">
+    <section id="rate-container-id" class="rate-container">
       <section class="icon">
         <img src="images/icon-star.svg" alt="icon" class="icon-star">
       </section>
@@ -29,25 +29,27 @@
         </p>
       </section>
       <section class="rate-buttons">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+        <button id="button-1" class="button1">1</button>
+        <button id="button-2" class="button2">2</button>
+        <button id="button-3" class="button3">3</button>
+        <button id="button-4" class="button4">4</button>
+        <button id="button-5" class="button5">5</button>
       </section>
       <section class="submit">
-        <button>SUBMIT</button>
+        <button id="submit-button">SUBMIT</button>
       </section>
     </section>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <section class="thank-you-state">
-      <section></section>
-      <section>
-        <p>You selected <!-- Add rating here --> out of 5</p>
+    <section id="thank-you-state-id" class="thank-you-state">
+      <section class="thank-you-logo-container">
+        <img src="images/illustration-thank-you.svg" alt="thankyou">
       </section>
-      <section>
+      <section class="rate">
+        <p id="rate-msg"></p>
+      </section>
+      <section class="thank-you-message">
         <h2>Thank you!</h2>
         <p>
           We appreciate you taking the time to give a rating. If you ever need more support, 
@@ -56,7 +58,7 @@
       </section>
     </section>
     <!-- Thank you state end -->
-
+    <script src="script.js"></script>
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Richard De Ocampo Jr.</a>.
