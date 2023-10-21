@@ -18,6 +18,7 @@ main {
 
 /* rate start */
 .rate-container {
+  max-width: 390px;
   background: radial-gradient(98.96% 98.96% at 50% 0%, hsl(215, 20%, 17%) 0%, hsl(216, 24%, 12%) 100%);
   height: 380px;
   width: 87%;
@@ -65,30 +66,16 @@ main {
   justify-content: space-between;
 }
 
-.button1:hover{
+
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover {
   background-color: hsl(25, 97%, 53%);
   color: white;
 }
 
-.button2:hover{
-  background-color: hsl(25, 97%, 53%);
-  color: white;
-}
-
-.button3:hover{
-  background-color: hsl(25, 97%, 53%);
-  color: white;
-}
-
-.button4:hover{
-  background-color: hsl(25, 97%, 53%);
-  color: white;
-}
-
-.button5:hover{
-  background-color: hsl(25, 97%, 53%);
-  color: white;
-}
 
 
 .rate-buttons button {
@@ -99,6 +86,13 @@ main {
   border-radius: 100%;
   background-color: hsla(216, 12%, 54%, 0.15);
   font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.rate-buttons button.selected,
+.rate-buttons button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
 }
 
 .submit {
@@ -130,6 +124,7 @@ main {
 
 /* thank you start */
 .thank-you-state {
+  max-width: 390px;
   display: none;
   flex-direction: column;
   align-items: center;
